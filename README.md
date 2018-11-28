@@ -5,3 +5,5 @@ The point of this package is to be able to do permutation/bootstrap analysis of 
 To make this script friendly for larger datasets, it runs its permutations/bootstraps in batches and saves them out in batches. This helps in the case that something crashes or if you want to resume the analysis later. To make sure you can leave off right where you started, parameters are saved and can be loaded in to run the analysis from the point you left off.
 
 The script can also project data into your pca space, and do some other cool stuff. You may encounter some bugs if you use the script outside the way I have in the past (not on purpose!). Let me know if you run into bugs. Some functionality needs to be finished: for example, parallelization. This is noted in the documentation where applicable. 
+
+Send emails to: alex.teghipco@uci.edu
