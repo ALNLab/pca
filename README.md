@@ -1,5 +1,7 @@
 # Pca
 
+# NOTE: WE HAVE FOUND THAT THIS METHOD FOR PCA PERMUTATION TESTING IS NOT AS ROBUST AS OTHER METHODS. WE ARE IN THE PROCESS OF UPDATING THESE SCRIPTS. 
+
 The point of this package is to be able to do permutation/bootstrap analysis of pca results to remove inconsistent components and loadings respectively. See componentSig.m to use these scripts and check out the paper this is based on (contained in the help section of componentSig). The trick to this approach is to figure out which components bootstrapped/permutted components match up with. For this we use a couple of different approaches, but the default is a specific procrustes rotation that differs slightly from matlab's version (again, see McIntosh paper and read me in componentSig). PCA/SVD itself is performed with scripts native to matlab.
 
 To make this script friendly for larger datasets, it runs its permutations/bootstraps in batches and saves them out in batches. This helps in the case that something crashes or if you want to resume the analysis later. To make sure you can leave off right where you started, parameters are saved and can be loaded in to run the analysis from the point you left off.
